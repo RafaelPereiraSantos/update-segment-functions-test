@@ -3,6 +3,9 @@ name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
-  uses: RafaelPereiraSantos/update-segment-functions@vchore/add_logs
-  with:
-    authorization-token: my-secret-token
+  test-job:
+    runs-on: self-hosted
+      steps:
+        - uses: RafaelPereiraSantos/update-segment-functions@vchore/add_logs
+          with:
+            authorization-token: my-secret-token
