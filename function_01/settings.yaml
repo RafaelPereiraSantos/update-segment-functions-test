@@ -1,0 +1,11 @@
+functionID: sfnc_1xrMxmOAqi
+settings:
+  - name: 'functionApiKey'
+    label: 'apiKey'
+    description: 'function API key'
+    required: true
+    sensitive: true
+    type: 'STRING'
+displayName: my function
+resourceType: "DESTINATION"
+description: my function description

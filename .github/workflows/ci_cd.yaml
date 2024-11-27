@@ -1,0 +1,9 @@
+
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    uses: RafaelPereiraSantos/update-segment-functions@vchore/add_logs
+    with:
+      authorization-token: my-secret-token
