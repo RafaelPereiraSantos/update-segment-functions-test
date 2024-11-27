@@ -5,7 +5,7 @@ on: [push]
 jobs:
   test-job:
     runs-on: self-hosted
-      steps:
-        - uses: RafaelPereiraSantos/update-segment-functions@vchore/add_logs
-          with:
-            authorization-token: my-secret-token
+    steps:
+      - uses: RafaelPereiraSantos/update-segment-functions@vchore/add_logs
+        with:
+          authorization-token: my-secret-token
