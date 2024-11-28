@@ -9,6 +9,10 @@ jobs:
   test-job:
     runs-on: ubuntu-latest
     steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: '0'
       - uses: RafaelPereiraSantos/update-segment-functions@chore/add_logs
         with:
           authorization-token: my-secret-token
