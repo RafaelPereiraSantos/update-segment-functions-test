@@ -2,19 +2,17 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
-  push:
-    branches:
-      - main
+  issue_comment:
+    types: [created]
 jobs:
   deploy-function:
+    if: ${{ github.event.issue.pull_request }}  && github.event.comment.body == '{your command favorite command in here}'
     runs-on: ubuntu-latest
     steps:
       - name: Git checkout
         uses: actions/checkout@v2
         with:
           fetch-depth: '0'
-      - uses: RafaelPereiraSantos/update-segment-functions@chore/add_logs
+      - uses: RafaelPereiraSantos/update-segment-functions@{version}
         with:
           authorization-token: ${{ github.event.issue.number }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          pr-number: ${{ github.event.issue.number }}
