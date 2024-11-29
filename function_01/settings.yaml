@@ -1,6 +1,6 @@
 functionID: sfnc_1xrMxmOAqi
 settings:
-  - name: 'functionApiKey'
+  - name: 'functionApiKeya'
     label: 'apiKey'
     description: 'function API key'
     required: true
