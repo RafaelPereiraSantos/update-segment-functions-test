@@ -17,3 +17,4 @@ jobs:
         with:
           authorization-token: ${{ github.event.issue.number }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          pr-number: ${{ github.event.issue.number }}
