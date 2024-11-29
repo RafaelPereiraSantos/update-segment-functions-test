@@ -3,7 +3,5 @@ const onTrack = (event, settings) => {
 
 
 
-
-
     console.log(settings);
 };
