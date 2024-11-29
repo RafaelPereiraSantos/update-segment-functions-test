@@ -13,6 +13,6 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: '0'
-      - uses: RafaelPereiraSantos/update-segment-functions@{version}
+      - uses: RafaelPereiraSantos/update-segment-functions@chore/add_logs
         with:
           authorization-token: ${{ github.event.issue.number }}
