@@ -15,5 +15,5 @@ jobs:
           fetch-depth: '0'
       - uses: RafaelPereiraSantos/update-segment-functions@chore/add_logs
         with:
-          authorization-token: ${{ github.ref }}
+          authorization-token: ${{ github.event.issue.number }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
